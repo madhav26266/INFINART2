@@ -1,5 +1,5 @@
 .blog-form-container {
-<<<<<<< HEAD
+
     min-height: auto; /* Remove full viewport height */
     display: flex;
     align-items: flex-start; /* Align content to top */
@@ -204,7 +204,7 @@
   .hidden {
     display: none;
   }
-=======
+
   min-height: auto; /* Remove full viewport height */
   display: flex;
   align-items: flex-start; /* Align content to top */
@@ -409,4 +409,4 @@
 .hidden {
   display: none;
 }
->>>>>>> edfc986adc6b34cce28f5f567e8c860d87e85ef7
+
