@@ -1,0 +1,31 @@
+.hero-container {
+  display: flex;
+  gap: 20px;
+  padding: 40px 40px;
+  justify-content: center;
+  /* background-color: #f3f3f3; */
+  flex-wrap: wrap;
+}
+
+.banner {
+  color: black;
+  border-radius: 12px;
+  padding: 30px;
+  background-size: cover;
+  background-position: center ;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.large-banner {
+  flex: 2;
+  min-width: 300px;
+  height: 320px;
+}
+
+.small-banner {
+  flex: 1;
+  min-width: 200px;
+  height: 320px;
+  align-self: flex-end;
+  background-position: top;
+}

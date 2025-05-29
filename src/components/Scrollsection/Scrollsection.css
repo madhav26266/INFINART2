@@ -1,0 +1,77 @@
+/* Wrapper */
+.scroll-wrapper {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+/* Heading */
+.scroll-heading {
+  font-size: 0.7rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: -10px;
+  letter-spacing: 5px;
+  overflow: hidden;
+}
+
+/* Scrollable Container */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 30px;
+  gap: 20px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 0px;
+}
+
+/* Card wrapper */
+.scroll-card {
+  flex: 0 0 calc(33.333% - 13.3px); /* 3 cards per view with gap */
+  min-width: 280px;
+  background-color: #e0f8f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.scroll-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card box */
+.scroll-item {
+  width: 100%;
+  height: 200px;
+  background-color: #e0f8f3;
+  border-radius: 12px;
+  border: solid 1px #e0f8f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Image */
+.scroll-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Title */
+.item-text {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+  font-weight: 400;
+}

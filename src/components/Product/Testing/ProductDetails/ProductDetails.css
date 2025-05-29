@@ -1,0 +1,107 @@
+
+/* Zoom cursor styling */
+.cursor-zoom-in {
+  cursor: zoom-in;
+}
+
+/* Opacity transition */
+.transition-opacity {
+  transition: opacity 0.3s ease;
+}
+
+/* Format form labels */
+label {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+/* Nice aspect ratio for the thumbnails */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+/* Loading state for product detail */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #38B2AC;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Not found styling */
+.not-found-container {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.back-to-shop-btn {
+  background-color: #38B2AC;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s;
+}
+
+.back-to-shop-btn:hover {
+  background-color: #2C7A7B;
+}
+
+/* Breadcrumbs */
+.breadcrumbs-container {
+  margin-bottom: 2rem;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.breadcrumb-link {
+  color: #6B7280;
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+  color: #38B2AC;
+  text-decoration: underline;
+}
+
+.current-breadcrumb {
+  color: #38B2AC;
+  font-weight: 500;
+}
+
+.breadcrumb-separator {
+  color: #9CA3AF;
+  margin: 0 0.25rem;
+}
+
+/* Responsive containers for the product details */
+@media (max-width: 1024px) {
+  .product-detail-content {
+    flex-direction: column;
+  }
+  
+  .product-detail-left,
+  .product-detail-right {
+    width: 100%;
+  }
+}

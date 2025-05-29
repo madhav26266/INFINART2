@@ -1,0 +1,126 @@
+.searchbar-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* padding: 0.5rem 0 1.5rem 0; */
+  background: #f7fafc;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px #0000000a;
+  margin-top: 1.6rem;
+}
+
+
+
+.searchbar-form {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 2px 12px rgba(6,182,212,0.06);
+  padding: 0.25rem 0.5rem 0.25rem 0.75rem;
+  transition: box-shadow 0.2s, width 0.3s;
+  width: 560px;
+  max-width: 95vw;
+  position: relative;
+}
+
+.searchbar-form.focused {
+  box-shadow: 0 6px 24px rgba(6,182,212,0.14);
+}
+
+.category-dropdown {
+  border: none;
+  background: #f1f5f9;
+  color: #08b2a9;
+  font-size: 1rem;
+  border-radius: 1rem;
+  padding: 0.4rem 0.8rem;
+  margin-right: 0.5rem;
+  outline: none;
+  font-weight: 500;
+}
+
+.search-icon {
+  color: #06d4ca;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.searchbar-form input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  flex: 1;
+  padding: 0.65rem 0.5rem;
+}
+
+.clear-btn {
+  background: none;
+  border: none;
+  color: #a0c0bc;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: color 0.2s;
+}
+
+.clear-btn:hover {
+  color: #06d4d0;
+}
+
+.submit-btn {
+  background: #06d4b2;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  box-shadow: 0 2px 8px rgba(6, 212, 195, 0.1);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+  background: #08b2a9;
+}
+
+.trending-searches {
+  font-size: 1rem;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.trending-tag {
+  background: #e0f8f3  ;
+  color: #08b2a4;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+  font-size: 0.97rem;
+  cursor: pointer;
+  margin-left: 0.3rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.trending-tag:hover {
+  background: #bafdfb;
+  color: #03a191;
+}
+
+@media (max-width: 600px) {
+  .searchbar-form {
+    width: 95vw;
+    min-width: unset;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  }
+  .searchbar-section {
+    padding: 1.2rem 0 1rem 0;
+  }
+}

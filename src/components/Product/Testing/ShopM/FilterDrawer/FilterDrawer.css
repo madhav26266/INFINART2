@@ -1,0 +1,447 @@
+/* Main container styles */
+.filter-drawer-content {
+  margin-top: 42px;
+  width: 300px;
+  height: 700px;
+  /* padding: -5px; */
+  overflow-y: auto;
+  
+}
+
+@media (min-width: 350px) {
+  .filter-drawer-content {
+    width: 300px;
+  }
+}
+
+.filter-drawer-container {
+  display: flex;
+  flex-direction: column;
+  height: 720px;
+  width: 400px;
+  background-color: #fff;
+}
+
+/* Header styles */
+.filter-drawer-header {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.filter-drawer-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-drawer-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.filter-drawer-close-btn {
+  color: #6b7280;
+}
+
+.filter-drawer-close-btn:hover {
+  color: #374151;
+}
+
+/* Scrollable content area */
+.filter-drawer-scrollable-content {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+/* Filter section styles */
+.filter-section {
+  margin-bottom: 1.5rem;
+}
+
+.filter-section-title {
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.25rem;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-option-label {
+  font-size: 0.875rem;
+}
+
+/* Show more button */
+.show-more-btn {
+  font-size: 0.875rem;
+  color: #0d9488;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+/* Radio group styles */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.price-radio-group {
+  margin-bottom: 0.75rem;
+}
+
+/* Custom location input */
+.custom-location-input {
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+/* Price range inputs */
+.price-range-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.price-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.price-range-separator {
+  font-size: 0.875rem;
+}
+
+/* Deliver to select */
+.deliver-to-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+/* Footer styles */
+.filter-drawer-footer {
+  padding: 1rem;
+  margin: 0;
+  border-top: 1px solid #e5e7eb;
+  background-color: white;
+  /* width: 100%; */
+
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-action-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.reset-btn {
+  flex: 1;
+}
+.reset-btn:hover {
+  background-color:#20bfa5;
+  color: white;
+}
+
+.apply-btn {
+  flex: 1;
+  background-color: #20bfa5;
+ 
+  color: white;
+}
+
+.apply-btn:hover {
+  background-color: #1cdfbe;;
+}
+
+/* Animation Keyframes */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Main container styles with animation */
+filter-drawer-content {
+  /* width: 300px; */
+  padding: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 50;
+  background-color: rgb(218, 65, 65);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+.filter-drawer-open {
+  transform: translateX(0);
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+/* @media (min-width: 300px) {
+  .filter-drawer-content {
+    width: 30px;
+  }
+} */
+
+/* Overlay styles */
+[data-state="open"] > .filter-drawer-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Header styles */
+.filter-drawer-header {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.filter-drawer-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-drawer-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.filter-drawer-close-btn {
+  color: #6b7280;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-drawer-close-btn:hover {
+  color: #374151;
+}
+
+/* Scrollable content area */
+.filter-drawer-scrollable-content {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.reset-btn {
+  flex: 1;
+}
+
+.apply-btn {
+  flex: 1;
+  background-color:#20bfa5;
+  /* font-size: 19px; */
+  color: white;
+  border: none;
+}
+
+
+
+/* All existing filter section styles remain the same */
+.filter-section {
+  margin-bottom: 1.5rem;
+}
+
+.filter-section-title {
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.25rem;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-option-label {
+  font-size: 0.875rem;
+}
+
+.show-more-btn {
+  font-size: 0.875rem;
+  color: #0d9488;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.price-radio-group {
+  margin-bottom: 0.75rem;
+}
+
+.custom-location-input,
+.price-input,
+.deliver-to-select {
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+.price-range-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.price-range-separator {
+  font-size: 0.875rem;
+}
+
+/* Animation Keyframes */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Main container styles with animation */
+.filter-drawer-content {
+  width: 300px;
+  padding: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 50;
+  background-color: rgb(240, 233, 233);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+
+
+@media (min-width: 640px) {
+  .filter-drawer-content {
+    width: 350px;
+  } 
+}
+
+/* Overlay styles */
+[data-state="open"] > .filter-drawer-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Header styles */
+  filter-drawer-header {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  position: relative; /* Added for close button positioning */
+}
+
+.filter-drawer-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-drawer-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 0; /* Added to remove default margins */
+}
+
+.filter-drawer-close-btn {
+  color: #6b7280;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  margin-left: auto; /* Pushes button to the right */
+}
+
+.filter-drawer-close-btn:hover {
+  color: #374151;
+}
+
+/* Remove default close button from SheetContent */
+[data-radix-sheet-content] > button[aria-label="Close"] {
+  display: none !important;
+}
+

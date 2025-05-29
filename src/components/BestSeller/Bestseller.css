@@ -1,0 +1,128 @@
+.best-sellers-section {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1260px;
+  margin: 0 auto;
+  border: 1px solid #aaa;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.slider {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.seller-card {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.shop-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.image-wrapper:hover .shop-details {
+  opacity: 1;
+}
+
+.shop-details p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.shop-details span {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.seller-card p {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+}
+
+.arrow {
+  background-color: #fff;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 1rem;
+  z-index: 10;
+  color: #444;
+  transition: transform 0.2s ease;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.left {
+  position: absolute;
+  left: 0;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}

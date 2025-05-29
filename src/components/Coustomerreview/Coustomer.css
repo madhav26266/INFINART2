@@ -1,0 +1,72 @@
+.customer-review-section {
+    padding: 2rem 2rem;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .customer-review-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .customer-review-header .reviews-link {
+    font-size: 1.1rem;
+    color: #20bfa5;
+    margin-bottom: 2rem;
+  }
+  
+  .customer-review-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .customer-review-card {
+    background: #e0f8f3;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .customer-review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+  }
+  
+  .profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .customer-review-card h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    color: #444;
+  }
+  
+  .stars {
+    margin: 0.5rem 0;
+    color: #f9a825; /* gold/yellow color */
+    font-size: 1.2rem;
+  }
+  
+  .customer-review-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .read-more {
+    color: #20bfa5;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  

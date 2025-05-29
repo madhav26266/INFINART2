@@ -1,0 +1,67 @@
+.sale-banner-box {
+    position: relative;
+    width: 100%;
+    max-width: 1260px;
+    margin: 40px auto;
+    height: 220px;
+    background-image: url("https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .sale-banner-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dimming overlay */
+    z-index: 0;
+    border-radius: 16px;
+  }
+  
+  .sale-banner-box h2,
+  .sale-banner-box p {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .sale-banner-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sale-banner-box h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .sale-banner-box p {
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+  
+  .sale-heading-line {
+    text-align: center;
+    font-size: 0.67rem;
+   font-weight: 700; 
+    color: #333;
+    margin-bottom: 1rem;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    font-family: poppins;
+  }
+  

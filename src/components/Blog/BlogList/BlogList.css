@@ -1,0 +1,164 @@
+.blog-list{
+<<<<<<< HEAD
+    background-color: #f9fafb;
+  }
+  .blog-list-container {
+    max-width: 900px;
+    min-height: 600px;
+    max-height :fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* background-color: #f9fafb; */
+  }
+  
+  .blog-grid {
+   display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Exactly 4 columns */
+    gap: 40px;
+    justify-content: center; /* Center the grid itself */
+    margin-top: 30px;
+  }
+  
+  .blog-card {
+    
+    background-color: #e5fafc;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    max-height: 370px;
+    overflow: hidden;
+  }
+  
+  .blog-card.expanded {
+    max-height: none;
+  }
+  
+  .blog-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .blog-content {
+    text-align: left;
+    margin: 10px 0;
+  }
+  
+  .read-more-btn {
+    background: transparent;
+    border: none;
+    color: #1aa57a;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
+  .blog-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .submit-btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #1aa57a;
+  }
+  
+  .delete-btn {
+    background-color: crimson;
+  }
+=======
+  background-color: #f9fafb;
+}
+.blog-list-container {
+  max-width: 900px;
+  min-height: 600px;
+  max-height :fit-content;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  /* background-color: #f9fafb; */
+}
+
+.blog-grid {
+ display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Exactly 4 columns */
+  gap: 40px;
+  justify-content: center; /* Center the grid itself */
+  margin-top: 30px;
+}
+
+.blog-card {
+  
+  background-color: #e5fafc;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  max-height: 370px;
+  overflow: hidden;
+}
+
+.blog-card.expanded {
+  max-height: none;
+}
+
+.blog-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.blog-content {
+  text-align: left;
+  margin: 10px 0;
+}
+
+.read-more-btn {
+  background: transparent;
+  border: none;
+  color: #1aa57a;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.blog-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.submit-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #1aa57a;
+}
+
+.delete-btn {
+  background-color: crimson;
+}
+>>>>>>> edfc986adc6b34cce28f5f567e8c860d87e85ef7
